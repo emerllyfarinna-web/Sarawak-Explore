@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sarawak Tour Package Booking</title>
+    
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ======================================
+        PAGE 1: HOME
+====================================== -->
+
+<div data-role="page" id="home">
+
+    <!-- Welcome Image -->
+    <div class="welcome-banner">
+        <image src="image/sarawak-welcome.jpg"> alt="Welcome to Sarawak Tour Journey" style="width: 100%; max-width: 2000px;">
+    </div>
+
+    <!-- Header -->
+    <div data-role="header" class="header-bg">
+        <h1>Sarawak Tour Packages</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div data-role="main" class="ui-content">
+
+        <h2>Welcome to Sarawak! 🌴</h2>
+
+        <p>
+            Discover beautiful destinations around Sarawak.
+            Book your tour package with us today!
+        </p>
+
+        <a href="#packages"
+           data-role="button"
+           data-transition="slide">
+            View Tour Packages
+        </a>
+
+        <a href="#booking"
+           data-role="button"
+           data-transition="slide">
+            Make a Booking
+        </a>
+
+        <a href="#contact"
+           data-role="button"
+           data-transition="slide">
+            Contact Us
+        </a>
+
+    </div>
+
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed">
+        <h4>© 2026 Sarawak Tour Booking System</h4>
+    </div>
+
+</div>
+<!-- ======================================
+        PAGE 2: TOUR PACKAGES
+====================================== -->
+
+<div data-role="page" id="packages">
+
+    <!-- Header -->
+    <div data-role="header" class="header-bg">
+        <a href="#home"
+           data-icon="home"
+           data-iconpos="notext"
+           data-transition="slide"
+           data-direction="reverse">
+            Home
+        </a>
+
+        <h1>Tour Packages</h1>
+    </div>
+
+
+    <!-- Main Content -->
+    <div data-role="main" class="ui-content">
+
+        <h2 class="tour-title">Available Tour Packages</h2>
+
+
+        <!-- Container for all 3 packages -->
+        <div class="package-container">
+
+
+            <!-- =====================================
+                    PACKAGE 1 - KUCHING
+            ====================================== -->
+            <div class="package-card">
+
+                <img src="image/sarawakku.jpeg"
+                     alt="Kuching City Tour"
+                     class="package-image">
+
+                <div class="package-content">
+
+                    <h3>🏛️ Kuching City Tour</h3>
+
+                    <p>
+                        Explore the beautiful city of Kuching and discover
+                        its famous attractions and cultural heritage.
+                    </p>
+
+                    <p>
+                        <strong>Price:</strong> RM 150.00
+
+                        <span class="tooltip-icon"
+                              title="Duration: 1 Day">
+                            ℹ️
+                        </span>
+                    </p>
+
+                    <a href="#popup-kuching"
+                       data-rel="popup"
+                       data-position-to="window"
+                       class="package-button">
+                        View Details
+                    </a>
+
+                </div>
+
+
+                <!-- Kuching Popup -->
+                <div data-role="popup"
+                     id="popup-kuching"
+                     class="popup-width">
+
+                    <p>
+                        <strong>Destinations:</strong>
+                        Kuching Waterfront, Cat Museum, Sarawak Museum
+                    </p>
+
+                    <p>
+                        <strong>Activities:</strong>
+                        City sightseeing, cultural visit
+                    </p>
+
+                    <p>
+                        <strong>Facilities Included:</strong>
+                        Transport, English-speaking guide
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================
+                    PACKAGE 2 - BAKO
+            ====================================== -->
+            <div class="package-card">
+
+                <img src="image/bako.jpg"
+                     alt="Bako National Park"
+                     class="package-image">
+
+                <div class="package-content">
+
+                    <h3>🌿 Bako National Park</h3>
+
+                    <p>
+                        Experience Sarawak's natural beauty with jungle
+                        trekking, wildlife and beautiful coastal scenery.
+                    </p>
+
+                    <p>
+                        <strong>Price:</strong> RM 350.00
+
+                        <span class="tooltip-icon"
+                              title="Duration: 1 Day">
+                            ℹ️
+                        </span>
+                    </p>
+
+                    <a href="#popup-bako"
+                       data-rel="popup"
+                       data-position-to="window"
+                       class="package-button">
+                        View Details
+                    </a>
+
+                </div>
+
+
+                <!-- Bako Popup -->
+                <div data-role="popup"
+                     id="popup-bako"
+                     class="popup-width">
+
+                    <p>
+                        <strong>Destinations:</strong>
+                        Bako National Park, Teluk Assam Beach
+                    </p>
+
+                    <p>
+                        <strong>Activities:</strong>
+                        Jungle trekking, wildlife observation, beach visit
+                    </p>
+
+                    <p>
+                        <strong>Facilities Included:</strong>
+                        Boat transfer, entrance fee, guide, lunch
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================
+                    PACKAGE 3 - MULU
+            ====================================== -->
+            <div class="package-card">
+
+                <img src="image/mulu national park.jpg"
+                     alt="Mulu National Park"
+                     class="package-image">
+
+                <div class="package-content">
+
+                    <h3>🏔️ Mulu National Park</h3>
+
+                    <p>
+                        Discover the spectacular caves and rainforest of
+                        Gunung Mulu National Park.
+                    </p>
+
+                    <p>
+                        <strong>Price:</strong> RM 850.00
+
+                        <span class="tooltip-icon"
+                              title="Duration: 3 Days 2 Nights">
+                            ℹ️
+                        </span>
+                    </p>
+
+                    <a href="#popup-mulu"
+                       data-rel="popup"
+                       data-position-to="window"
+                       class="package-button">
+                        View Details
+                    </a>
+
+                </div>
+
+
+                <!-- Mulu Popup -->
+                <div data-role="popup"
+                     id="popup-mulu"
+                     class="popup-width">
+
+                    <p>
+                        <strong>Destinations:</strong>
+                        Gunung Mulu National Park, Clearwater Cave, Deer Cave
+                    </p>
+
+                    <p>
+                        <strong>Activities:</strong>
+                        Cave exploration, canopy walkway, night walk
+                    </p>
+
+                    <p>
+                        <strong>Facilities Included:</strong>
+                        Accommodation, daily breakfast, dinner,
+                        guide, entrance fees
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- END PACKAGE CONTAINER -->
+
+    </div>
+    <!-- END MAIN CONTENT -->
+
+
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed">
+
+        <a href="#home"
+           data-role="button"
+           data-icon="back"
+           data-transition="slide"
+           data-direction="reverse">
+            Back
+        </a>
+
+    </div>
+
+</div>
+<!-- END PAGE 2 -->
+
+<!-- ======================================
+        PAGE 3: BOOKING
+====================================== -->
+```html
+<div data-role="page" id="booking">
+
+    <div data-role="header" class="header-bg">
+        <a href="#home" data-icon="home" data-iconpos="notext"
+           data-transition="slide" data-direction="reverse">Home</a>
+        <h1>Make a Booking</h1>
+    </div>
+
+    <div data-role="main" class="ui-content booking-content">
+
+        <h2>🌿 Plan Your Sarawak Trip</h2>
+        <p class="form-intro">
+            Fill in the details below to start your journey with us.
+        </p>
+
+        <form id="bookingForm">
+
+            <label class="required">Full Name</label>
+            <input type="text" id="bookName" placeholder="Enter your full name">
+            <div class="error-msg" id="bookNameErr">Please enter your name</div>
+
+            <label class="required">Email</label>
+            <input type="email" id="bookEmail" placeholder="example@email.com">
+            <div class="error-msg" id="bookEmailErr">
+                Please enter a valid email address
+            </div>
+
+            <label class="required">Phone Number</label>
+            <input type="tel" id="bookPhone" placeholder="012-3456789">
+            <div class="error-msg" id="bookPhoneErr">
+                Please enter your phone number
+            </div>
+
+            <label class="required">Tour Package</label>
+            <select id="bookPackage">
+                <option value="">Choose your destination</option>
+                <option value="Kuching City Tour - RM150.00">
+                    Kuching City Tour - RM150.00
+                </option>
+                <option value="Bako National Park - RM250.00">
+                    Bako National Park - RM250.00
+                </option>
+                <option value="Mulu National Park - RM850.00">
+                    Mulu National Park - RM850.00
+                </option>
+            </select>
+            <div class="error-msg" id="bookPackageErr">
+                Please select a tour package
+            </div>
+
+            <label class="required">Travel Date</label>
+            <input type="date" id="bookDate">
+            <div class="error-msg" id="bookDateErr">
+                Please select your travel date
+            </div>
+
+            <label class="required">Number of Participants</label>
+            <input type="number" id="bookPax" min="1" max="50" placeholder="1">
+            <div class="error-msg" id="bookPaxErr">
+                Please enter number of participants
+            </div>
+
+            <label>Special Requests</label>
+            <textarea id="bookRequest" rows="4"
+                      placeholder="Any special requirements?"></textarea>
+
+            <label class="checkbox-label">
+                <input type="checkbox" id="bookConsent">
+                I agree to the privacy policy and consent to the responsible use
+                of my information.
+            </label>
+
+            <div class="error-msg" id="bookConsentErr">
+                ⚠️ You must provide consent before submitting
+            </div>
+
+            <button type="submit" data-theme="b">
+                🌿 Submit Booking
+            </button>
+
+            <div class="success-msg" id="bookSuccess">
+                ✅ Booking submitted successfully!
+            </div>
+
+        </form>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="back"
+           data-transition="slide" data-direction="reverse">
+            Back
+        </a>
+    </div>
+
+</div>
+
+```html
+<!-- ======================================
+        PAGE 4: CONTACT US
+====================================== -->
+
+<div data-role="page" id="contact">
+
+    <div data-role="header" class="header-bg">
+        <a href="#home"
+           data-icon="home"
+           data-iconpos="notext"
+           data-transition="slide"
+           data-direction="reverse">
+            Home
+        </a>
+
+        <h1>Contact Us</h1>
+    </div>
+
+    <div data-role="main" class="ui-content contact-content">
+
+        <div class="contact-intro">
+            <h2>📩 Get In Touch</h2>
+
+            <p>
+                Have a question or need more information about our tour packages?
+                Feel free to send us a message.
+            </p>
+        </div>
+
+        <form id="contactForm">
+
+            <label class="required">Your Name</label>
+            <input type="text"
+                   id="contactName"
+                   placeholder="Enter your full name">
+
+            <div class="error-msg" id="contactNameErr">
+                ⚠️ Please enter your name
+            </div>
+
+
+            <label class="required">Email Address</label>
+            <input type="email"
+                   id="contactEmail"
+                   placeholder="example@email.com">
+
+            <div class="error-msg" id="contactEmailErr">
+                ⚠️ Please enter a valid email address
+            </div>
+
+
+            <label class="required">Message</label>
+            <textarea id="contactMessage"
+                      rows="5"
+                      placeholder="Write your message here..."></textarea>
+
+            <div class="error-msg" id="contactMessageErr">
+                ⚠️ Please enter your message
+            </div>
+
+
+            <label class="checkbox-label">
+                <input type="checkbox" id="contactConsent">
+
+                I consent to the collection and responsible use
+                of my submitted information for communication purposes only.
+            </label>
+
+            <div class="error-msg" id="contactConsentErr">
+                ⚠️ Please check this box to submit the form
+            </div>
+
+
+            <button type="submit" data-theme="b">
+                ✉️ Send Message
+            </button>
+
+            <div class="success-msg" id="contactSuccess">
+                ✅ Message sent successfully!
+            </div>
+
+        </form>
+
+        <div class="contact-info">
+
+            <p>📍 <strong>Location:</strong> Kuching, Sarawak</p>
+
+            <p>📞 <strong>Phone:</strong> +60 12-345 6789</p>
+
+            <p>📧 <strong>Email:</strong> info@sarawaktravel.com</p>
+
+        </div>
+
+    </div>
+
+
+    <div data-role="footer" data-position="fixed">
+
+        <a href="#home"
+           data-role="button"
+           data-icon="back"
+           data-transition="slide"
+           data-direction="reverse">
+            Back
+        </a>
+
+    </div>
+
+</div>
